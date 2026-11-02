@@ -1,0 +1,228 @@
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.site-body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #ffffff;
+}
+
+/* Header & Nav */
+.header {
+  background-color: #1a202c;
+  color: #ffffff;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header__brand {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #48bb78;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2b6cb0;
+  color: #ffffff;
+  text-align: center;
+  padding: 56px 16px;
+}
+
+.hero__title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero__subtitle {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+/* Components: Button & Badges */
+.button {
+  display: inline-block;
+  background-color: #48bb78;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #38a169;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.badge--easy { background-color: #c6f6d5; color: #22543d; }
+.badge--moderate { background-color: #feebc8; color: #744210; }
+.badge--hard { background-color: #fed7d7; color: #742a2a; }
+
+/* Sections */
+.section {
+  padding: 48px 16px;
+}
+
+.section--alt {
+  background-color: #f7fafc;
+}
+
+.section__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1a202c;
+}
+
+.section__text {
+  font-size: 16px;
+  color: #4a5568;
+}
+
+/* Trail Cards Grid */
+.trail-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trail-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.trail-card__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #2d3748;
+}
+
+.trail-card__desc {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: #4a5568;
+}
+
+.trail-card__meta {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Contact Box */
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  max-width: 480px;
+  margin: 24px auto 0;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+.contact-box__item {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+.contact-box__item:last-child {
+  margin-bottom: 0;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.faq-item__q {
+  font-weight: 700;
+  color: #2b6cb0;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.faq-item__a {
+  color: #4a5568;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .header__container { flex-direction: row; justify-content: space-between; }
+  .hero { padding: 80px 16px; }
+  .hero__title { font-size: 40px; }
+  .trail-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .trail-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero { padding: 96px 16px; }
+}
