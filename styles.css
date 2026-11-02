@@ -1,4 +1,3 @@
-/* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,6 @@ body.site-body {
   background-color: #ffffff;
 }
 
-/* Header & Nav */
 .header {
   background-color: #1a202c;
   color: #ffffff;
@@ -55,7 +53,6 @@ body.site-body {
   color: #48bb78;
 }
 
-/* Hero Section */
 .hero {
   background-color: #2b6cb0;
   color: #ffffff;
@@ -74,7 +71,6 @@ body.site-body {
   color: #e2e8f0;
 }
 
-/* Components: Button & Badges */
 .button {
   display: inline-block;
   background-color: #48bb78;
@@ -104,7 +100,6 @@ body.site-body {
 .badge--moderate { background-color: #feebc8; color: #744210; }
 .badge--hard { background-color: #fed7d7; color: #742a2a; }
 
-/* Sections */
 .section {
   padding: 48px 16px;
 }
@@ -162,7 +157,6 @@ body.site-body {
   color: #718096;
 }
 
-/* Contact Box */
 .contact-box {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
@@ -184,7 +178,6 @@ body.site-body {
   margin-bottom: 0;
 }
 
-/* FAQ */
 .faq-item {
   margin-bottom: 20px;
   background-color: #ffffff;
@@ -205,16 +198,7 @@ body.site-body {
   font-size: 15px;
 }
 
-/* Footer */
-.footer {
-  background-color: #1a202c;
-  color: #a0aec0;
-  text-align: center;
-  padding: 24px;
-  font-size: 14px;
-}
 
-/* Media Queries */
 @media (min-width: 768px) {
   .header__container { flex-direction: row; justify-content: space-between; }
   .hero { padding: 80px 16px; }
