@@ -1,103 +1,105 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+<head> 
+   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore Alberta Trails - Discover various mountain passes and outdoor adventures.">
-  <title>Explore Alberta Trails | Prairie Pixel Studio</title>
-  
+     
+    <title>Explore Alberta Trails</title>
   <script src="https://cdn.tailwindcss.com"></script>
- 
   <link rel="stylesheet" href="styles.css">
+
+   
 </head>
-<body class="site-body">
 
-  <header class="header">
-    <div class="header__container">
-      <a href="#" class="header__brand">🌲 Explore Alberta Trails</a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#trails" class="nav__link">Trails</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
-          <li><a href="#faq" class="nav__link">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body>
+    <header>
+        <h1>Explore Alberta Trails</h1>
 
-  <main>
-    
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Discover Alberta's Wildest Routes</h1>
-        <p class="hero__subtitle">From Rocky Mountain peaks to tranquil badlands, find your next adventure.</p>
-        <a href="#trails" class="button">Explore Trails</a>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section__container">
-        <h2 class="section__title">About Us</h2>
-        <p class="section__text text-center max-w-2xl mx-auto">
-          Explore Alberta Trails is crafted by Prairie Pixel Studio in Calgary. We provide accurate, accessible, and inspiring trail guides for all skill levels across the province.
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="#About">About</a></td>
+                    <td><a href="#trails">Trails</a></td>
+                    <td><a href="#details">Details</a></td>
+                    <td><a href="#contact">Contact</a></td>
+                    <td><a href="#faq">FAQ</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+<main>
+    <section id="About">
+        <h2>About</h2>
+        <p>Explore Alberta Trails is your ultimate guide to discovering the finest outdoor adventures across the province. 
+        From the majestic peaks of the Rocky Mountains to tranquil foothill paths, our curated routes set a new standard for outdoor exploration.
         </p>
-      </div>
     </section>
 
-    <section id="trails" class="section section--alt">
-      <div class="section__container">
-        <h2 class="section__title">Featured Trails</h2>
-        <div class="trail-grid">
-          
-          <article class="trail-card">
-            <span class="badge badge--moderate">Moderate</span>
-            <h3 class="trail-card__title">Johnston Canyon</h3>
-            <p class="trail-card__desc">Walk along scenic catwalks leading to roaring waterfalls in Banff National Park.</p>
-            <p class="trail-card__meta"><strong>Distance:</strong> 5.1 km</p>
-          </article>
-
-          <article class="trail-card">
-            <span class="badge badge--hard">Challenging</span>
-            <h3 class="trail-card__title">Ha Ling Peak</h3>
-            <p class="trail-card__desc">A steep climb providing panoramic views over Canmore and the Bow Valley.</p>
-            <p class="trail-card__meta"><strong>Distance:</strong> 7.2 km</p>
-          </article>
-
-          <article class="trail-card">
-            <span class="badge badge--easy">Easy</span>
-            <h3 class="trail-card__title">Crypt Lake Trail</h3>
-            <p class="trail-card__desc">Features a boat ride, ladder climb, and natural tunnel leading to an alpine lake.</p>
-            <p class="trail-card__meta"><strong>Distance:</strong> 17.2 km</p>
-          </article>
-
-        </div>
-      </div>
+    <section id="trails">
+        <h2>Featured Trails</h2>
+            <ul>
+                <li><strong>Johnston Canyon:</strong>
+                    <table>
+                        <tr>
+                            <th>Location:</th>
+                            <td>Banff National Park</td>
+                        </tr>
+                        <tr>
+                            <th>Distance:</th>
+                            <td>5.1 km return</td>
+                        </tr>
+                        <tr>
+                            <th>Difficulty:</th>
+                            <td>Easy / Moderate</td>
+                        </tr>
+                        <tr>
+                            <th>Highlights:</th>
+                            <td>Waterfalls, deep canyon gorges, catwalks</td>
+                        </tr>   
+                    </table>
+                </li>
+                <li><strong>Ha Ling Peak:</strong> <br> Canmore, AB - 7.2 km (Steep summit climb)</li>
+                <li><strong>Crypt Lake Trail:</strong><br> Waterton Lakes National Park - 17.2 km (Includes tunnel and ladder sections)</li>
+                <li><strong>Plain of Six Glaciers:</strong><br> Lake Louise - 14.6 km with panoramic glacier views</li>
+            </ul>
     </section>
 
-    <section id="contact" class="section">
-      <div class="section__container text-center">
-        <h2 class="section__title">Get in Touch</h2>
-        <p class="section__text mb-4">Have questions about a trail? Reach out to our Calgary team directly:</p>
-        <div class="contact-box">
-          <p class="contact-box__item">📧 <strong>Email:</strong> hello@explorealbertatrails.ca</p>
-          <p class="contact-box__item">📞 <strong>Phone:</strong> (403) 555-0198</p>
-          <p class="contact-box__item">📍 <strong>Office:</strong> Calgary, AB (Prairie Pixel Studio)</p>
-        </div>
-      </div>
+    <section id="details">
+        <h2>Trail Details & Gear</h2>
+        <p>Proper preparation ensures a safe and enjoyable hiking experience in Alberta's diverse backcountry. 
+        Always check weather conditions, carry bear spray, and pack sufficient water.
+        Following are official resources and guide listings for Alberta adventures:
+        <ul>
+            <li><a href="https://www.albertaparks.ca" target="_blank">Alberta Parks Official Website</a></li>
+            <li><a href="https://www.banfflakelouise.com" target="_blank">Banff & Lake Louise Tourism</a></li>
+            <li><a href="https://www.pc.gc.ca/en/pn-np/ab/banff" target="_blank">Parks Canada - Banff National Park</a></li>
+        </ul>
+        
     </section>
 
-    <section id="faq" class="section section--alt">
-      <div class="section__container max-w-2xl mx-auto">
-        <h2 class="section__title">FAQ</h2>
-        <div class="faq-item">
-          <h4 class="faq-item__q">Do I need a park pass?</h4>
-          <p class="faq-item__a">Yes, National Parks require a Discovery Pass, and Kananaskis requires a Conservation Pass.</p>
-        </div>
-      </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions about trail conditions or looking for customized route recommendations? 
+        Get in touch with our trail coordination team based in Calgary, Alberta. 
+        Reach out via email at info@explorealbertatrails.ca or call our office for support.
+        </p>
     </section>
 
-  </main>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>Find answers to common questions regarding trail passes, seasonal closures, and wildlife safety.
+        
+        </p>
+
+      
+    </section>
+</main>
+
+<div class="footer">
+    <p> 2026 Explore Alberta Trails. All rights reserved.</p>
+</div>
 
 </body>
 </html>
