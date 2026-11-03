@@ -9,7 +9,7 @@
     <title>Explore Alberta Trails</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-
+  <script src="script.js"></script>
    
 </head>
 
@@ -84,7 +84,32 @@
         <p>Have questions about trail conditions or looking for customized route recommendations? 
         Get in touch with our trail coordination team based in Calgary, Alberta. 
         Reach out via email at info@explorealbertatrails.ca or call our office for support.
+        You can also fill out the form below to reach out to us directly.
         </p>
+    </section>
+    <section id="inquiry-form">    
+        <form class="form">
+            <h2 style="text-align: center;"><strong>Inquiry Form</strong></h2>
+            <label for="Full-Name">Full Name:</label><br>
+            <input type="text" id="Full-Name" name="Full-Name" placeholder="Your Name" required><br><br>
+           
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email" name="Email" placeholder="Your Email" required><br><br>
+
+            <label for="Trail-Length">Trail Length:</label>
+            <select name="Trail-Length" id="Trail-Length"  required>
+                <option value="" disabled selected>Select Trail Length</option>
+               <option value="banff-5.1">Banff National Park: 5.1km</option>
+            <option value="lake-louise-14.6">Lake Louise: 14.6km</option>
+            <option value="waterton-17.2">Waterton Lakes: 17.2km</option>
+            <option value="ha-ling-7.2">Ha Ling Peak: 7.2km</option>
+            </select><br><br>
+
+            <label for="Message">Message:</label><br>
+            <textarea id="Message" name="Message" rows="5" cols="30" placeholder="Your Message" required maxlength="500"></textarea><br><br>
+
+            <Button type="submit">Submit</Button>
+        </Form>
     </section>
 
     <section id="faq">
