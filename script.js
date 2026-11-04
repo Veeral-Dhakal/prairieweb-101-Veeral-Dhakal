@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const windspeed = data.current_weather.windspeed;
              weatherCard.innerHTML = `
                 <h3>Current Weather at Ha Ling Peak</h3>
-                <p>Temperature: ${temperature}°C</p>
-                <p>Wind Speed: ${windspeed} km/h</p>
+                <p>🌡️Temperature: ${temperature}°C</p>
+                <p>💨Wind Speed: ${windspeed} km/h</p>
             `;
            
         })
